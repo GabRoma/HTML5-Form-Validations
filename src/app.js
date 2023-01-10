@@ -48,9 +48,8 @@ window.onload = function() {
       console.log("El campo credit card esta vacio");
       alertError.classList.remove("invisible");
       please.classList.remove("invisible");
+    } else {
+      please.classList.add("invisible");
     }
   }
 };
-let elementoActivo = document.querySelector(
-  'input[name="inlineRadioOptions"]:checked'
-);
