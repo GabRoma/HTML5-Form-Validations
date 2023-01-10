@@ -4,6 +4,7 @@ import "./style.css";
 
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
+import { placements } from "@popperjs/core";
 
 window.onload = function() {
   //write your code here
@@ -17,6 +18,7 @@ window.onload = function() {
 
   let alertError = document.getElementById("alertError");
   let state = document.getElementById("inputState");
+  let please = document.getElementById("please");
 
   function prueba(e) {
     e.preventDefault();
@@ -45,6 +47,7 @@ window.onload = function() {
     if (!elementoActivo) {
       console.log("El campo credit card esta vacio");
       alertError.classList.remove("invisible");
+      please.classList.remove("invisible");
     }
   }
 };
